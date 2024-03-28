@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext'; // Ensure this path is correct
+import { useAuth } from '../context/AuthContext';
 
 function SignUp() {
     const [email, setEmail] = useState('');
@@ -11,7 +11,7 @@ function SignUp() {
     const handleSubmit = (e) => {
         e.preventDefault();
         register(email, password);
-        navigate('/profile'); // Directly navigate to profile or sign-in page
+        navigate('/profile');
     };
 
     return (
